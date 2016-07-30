@@ -49,6 +49,9 @@ public class Konto extends AbstractEntity implements Serializable {
       @Column(name = "email", length = 64, unique = true, nullable = false)
       private String email;
 
+      public Konto() {
+      }
+
       @Override
       protected Long getId() {
             return id;
@@ -98,8 +101,5 @@ public class Konto extends AbstractEntity implements Serializable {
       public void setEmail(String email) {
             this.email = email;
       }
-      
-      
-      
 
 }
